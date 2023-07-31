@@ -1319,8 +1319,8 @@
         const docType = document.doctype;
         const docTypeDeclaration = docType
             ? `<!DOCTYPE ${escapeHTML(docType.name)} ${escapeHTML(
-                  docType.publicId
-              )} ${escapeHTML(docType.systemId)}`.trim() + '>'
+                docType.publicId
+            )} ${escapeHTML(docType.systemId)}`.trim() + '>'
             : '';
 
         // Create a hidden sandbox <iframe> element within we can create default HTML elements and query their
